@@ -1,0 +1,26 @@
+.listing .nnweb_article_highlighting {
+
+	&.style-pulse.highlight + .product--box {
+		overflow: visible;
+
+		.box--content {
+			animation-duration: .4s;
+			animation-iteration-count: 3;
+			animation-name: pulse;
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform:scale(1);
+	}
+
+	50% {
+		transform:scale(0.9);
+	}
+
+	100% {
+		transform:scale(1);
+	}
+}

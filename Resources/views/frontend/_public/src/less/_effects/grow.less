@@ -1,0 +1,21 @@
+.listing .nnweb_article_highlighting {
+
+	&.style-grow.highlight + .product--box {
+
+		.box--content {
+			animation-duration: .8s;
+			animation-iteration-count: 1;
+			animation-name: grow;
+		}
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform:scale(0.01);
+	}
+
+	100% {
+		transform:scale(1);
+	}
+}

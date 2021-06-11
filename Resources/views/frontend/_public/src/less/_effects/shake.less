@@ -1,0 +1,30 @@
+.listing .nnweb_article_highlighting {
+
+	&.style-shake.highlight + .product--box {
+		overflow: visible;
+
+		.box--content {
+			animation-duration: .4s;
+			animation-iteration-count: 3;
+			animation-name: shake;
+		}
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform:rotate(0);
+	}
+
+	25% {
+		transform:rotate(1deg);
+	}
+
+	75% {
+		transform:rotate(-1deg);
+	}
+
+	100% {
+		transform:rotate(0);
+	}
+}

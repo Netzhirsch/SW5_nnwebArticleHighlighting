@@ -1,0 +1,21 @@
+.listing .nnweb_article_highlighting {
+
+	&.style-slide.highlight + .product--box {
+
+		.box--content {
+			animation-duration: .8s;
+			animation-iteration-count: 1;
+			animation-name: slide;
+		}
+	}
+}
+
+@keyframes slide {
+	0% {
+		transform:translateX(105%);
+	}
+
+	100% {
+		transform:translateX(0);
+	}
+}

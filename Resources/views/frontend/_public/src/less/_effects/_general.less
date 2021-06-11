@@ -1,0 +1,18 @@
+.listing .nnweb_article_highlighting {
+
+	+ .product--box {
+		overflow: hidden;
+		
+		.box--content {
+			animation-direction: normal;
+			animation-delay: 0s;
+			animation-fill-mode: both;
+			animation-timing-function: ease-in-out;
+		}
+	
+	}
+	
+	&.repeating-interval:hover + .product--box .box--content {
+		animation-play-state: paused;
+	}	
+}

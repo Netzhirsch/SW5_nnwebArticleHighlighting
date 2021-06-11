@@ -1,0 +1,23 @@
+.listing .nnweb_article_highlighting {
+
+	&.style-shrink.highlight + .product--box {
+		perspective: 50px;
+
+		.box--content {
+			animation-duration: .8s;
+			animation-iteration-count: 1;
+			animation-name: shrink;
+			transform-style:preserve-3d;
+		}
+	}
+}
+
+@keyframes shrink {
+	0% {
+		transform:translate3d(0,0,100px);
+	}
+
+	100% {
+		transform:translate3d(0,0,0);
+	}
+}

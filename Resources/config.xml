@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.3/engine/Shopware/Components/Plugin/schema/config.xsd">
+    <elements>
+
+        <element type="boolean">
+            <name>activate_for_new</name>
+            <label lang="de">Neue Artikel hervorheben</label>
+            <label >Highlight new articles</label>
+        </element>
+
+        <element type="boolean">
+            <name>activate_for_sale</name>
+            <label lang="de">Reduzierte Artikel hervorheben</label>
+            <label >Highlight sale articles</label>
+        </element>
+
+        <element type="boolean">
+            <name>activate_for_topSeller</name>
+            <label lang="de">Topseller hervorheben</label>
+            <label >Highlight topseller</label>
+        </element>
+
+        <element type="boolean">
+            <name>activate_for_all</name>
+            <label lang="de">Alle Artikel hervorheben</label>
+            <label >Highlight all articles</label>
+        </element>
+
+        <element type="select">
+            <name>style</name>
+            <label lang="de">Stil</label>
+            <label >Style</label>
+            <description lang="de">Wählen Sie die Art und Weise aus, wie die Artikel hervorgehoben werden sollen.</description>
+            <description >Choose the way of highlighting.</description>
+            <store>
+                <option>
+                    <value>slide</value>
+                    <label>Slide</label>
+                </option>
+                <option>
+                    <value>shake</value>
+                    <label>Shake</label>
+                </option>
+                <option>
+                    <value>pulse</value>
+                    <label>Pulse</label>
+                </option>
+                <option>
+                    <value>grow</value>
+                    <label>Grow</label>
+                </option>
+                <option>
+                    <value>shrink</value>
+                    <label>Shrink</label>
+                </option>
+                <option>
+                    <value>fade</value>
+                    <label>Fade</label>
+                </option>
+            </store>
+        </element>
+
+        <element type="select">
+            <name>event</name>
+            <label>Event</label>
+            <description lang="de">Wählen Sie aus, wann der Artikel hervorgehoben werden soll.</description>
+            <description >Choose the moment of highlighting.</description>
+            <store>
+                <option>
+                    <value>visible</value>
+                    <label lang="de">Sobald der Artikel beim Scrollen sichtbar ist.</label>
+                    <label >As soon as the article becomes visible by scrolling.</label>
+                </option>
+                <option>
+                    <value>centered</value>
+                    <label lang="de">Sobald der Artikel beim Scrollen mittig im Viewport ist.</label>
+                    <label >As soon as the article gets to the center of the viewport.</label>
+                </option>
+            </store>
+        </element>
+
+        <element type="select">
+            <name>repeating</name>
+            <label lang="de">Wiederholung</label>
+            <label >Repeating</label>
+            <description lang="de">Wählen Sie aus, ob der Effekt mehrmals angezeigt werden soll.</description>
+            <description >Choose in which way the highlighting is repeated.</description>
+            <store>
+                <option>
+                    <value>none</value>
+                    <label lang="de">Effekt nicht wiederholen.</label>
+                    <label >Do not repeat the effect.</label>
+                </option>
+                <option>
+                    <value>event</value>
+                    <label lang="de">Effekt beim erneuten Eintreten des Events wiederholen.</label>
+                    <label >Repeat the effect, when the event takes place again.</label>
+                </option>
+                <option>
+                    <value>interval</value>
+                    <label lang="de">Effekt intervallmäßig wiederholen.</label>
+                    <label >Repeat the effect by interval.</label>
+                </option>
+            </store>
+        </element>
+
+        <element type="number">
+            <name>repeating_interval</name>
+            <label lang="de">Wiederholen nach (ms)</label>
+            <label >Repeat after (ms)</label>
+            <description lang="de">Geben Sie einen Wert in Millisekunden (1000 = 1 Sekunde) an.</description>
+            <description >Insert a value in milliseconds (1000 = 1 second).</description>
+        </element>
+
+    </elements>
+</config>
